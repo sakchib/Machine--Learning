@@ -1,0 +1,30 @@
+Examples of Scalars in Deep Learning
+
+Learning Rate:
+Learning rate ek scalar value hai jo neural network training ke waqt use hoti hai. Yeh specify karta hai ki model weights ko update karte waqt hum kitni large step lenge. Agar learning rate bohot chhota hai, toh training slow ho jati hai. Agar bohot bada hai, toh model unstable ho sakta hai.
+
+For example, agar learning rate 0.01 hai, toh yeh ek scalar value hai jo batata hai ki weight updates kitne bade increments mein honge.
+Loss Value (Error):
+Deep learning models ko train karte waqt hum loss function calculate karte hain, jo prediction aur actual output ke beech ka difference hota hai. Yeh loss ek scalar value hota hai jo batata hai ki model ki performance kitni achhi ya buri hai.
+
+For instance, agar loss 0.25 hai, toh yeh scalar value model ki accuracy aur errors ka ek numerical representation hai.
+Weights and Biases Initialization:
+Neural network ke neurons ke weights aur biases bhi initially scalar values hote hain. Yeh values randomly initialize ki jaati hain aur training ke dauran adjust hoti hain.
+
+For example, agar kisi neuron ka initial weight 0.5 hai, toh yeh ek scalar value hai. Yeh weight train hote waqt update hota hai, par yeh ek single value hai jo neuron ki influence ko represent karta hai.
+Activation Output:
+Har neuron ka output (activation output) bhi ek scalar hota hai. Jab input aur weights ko combine karke neuron process karta hai, toh yeh ek scalar value output karta hai jo agle layer ke neurons ko input deta hai.
+
+For example, agar ek neuron ka output 0.8 hai, toh yeh ek scalar hai jo agle layer ke neuron mein input ki tarah pass hota hai.
+Batch Size:
+Batch size bhi ek scalar hai jo specify karta hai ki training mein hum ek baar mein kitne examples use karenge. Agar batch size 32 hai, toh yeh ek scalar value hai jo specify karta hai ki hum ek step mein 32 examples par model ko train karenge.
+
+Regularization Parameter (Lambda):
+Regularization deep learning mein overfitting ko avoid karne ke liye use hota hai, aur iska parameter λ (lambda) ek scalar value hoti hai jo model ke complexity ko control karti hai. Higher lambda values means zyada penalty on complex models.
+
+For example, agar λ = 0.01 hai, toh yeh scalar model ke parameters ko control karne ke liye influence karta hai.
+Dropout Rate:
+Dropout rate bhi ek scalar hai jo batata hai ki har training step mein kitne neurons ko drop (ignore) kiya jayega. Agar dropout rate 0.2 hai, toh yeh scalar represent karta hai ki 20% neurons randomly drop ho jayenge during training.
+
+Example in Deep Learning Framework
+Agar humne TensorFlow ya PyTorch mein deep learning model likha hai, toh learning rate, loss, weights, biases, aur dropout rate scalar values hote hain jo model ke behavior aur performance ko influence karte hain.

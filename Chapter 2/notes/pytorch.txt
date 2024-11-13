@@ -1,0 +1,69 @@
+PyTorch is an open-source deep learning framework developed by Facebook's AI Research Lab (FAIR).
+It is widely used for building and training machine learning models, especially deep neural networks.
+
+Core Features of PyTorch:
+
+1. Tensors:
+   - Tensors are multi-dimensional arrays, similar to NumPy arrays, but can run on GPUs for faster computation.
+   - Example of a tensor in PyTorch:
+     tensor = torch.tensor([1, 2, 3])  # 1D tensor
+
+2. Automatic Differentiation (Autograd):
+   - PyTorch provides automatic differentiation for computing gradients using its 'autograd' module.
+   - This is used for backpropagation during the training of models.
+
+3. Neural Networks:
+   - PyTorch offers the `torch.nn` module, which contains pre-built layers and loss functions.
+   - Example:
+     import torch.nn as nn
+     model = nn.Sequential(nn.Linear(10, 5), nn.ReLU())
+
+4. GPU Acceleration:
+   - PyTorch can leverage GPUs for faster computation using the `.to(device)` method.
+   - Example:
+     if torch.cuda.is_available():
+         tensor = tensor.to('cuda')  # Moving tensor to GPU
+
+5. Dynamic Computation Graphs:
+   - PyTorch uses dynamic computation graphs (define-by-run), which makes it flexible and easy to modify models during runtime.
+
+6. High-Level API:
+   - PyTorch has high-level libraries like `torchvision` for computer vision tasks and `torchaudio` for audio tasks.
+
+Why Use PyTorch?
+
+- Flexibility: Its dynamic computation graph allows for easy experimentation and debugging.
+- Ease of Use: PyTorch is intuitive and closely resembles Python’s native syntax.
+- Deep Learning Support: PyTorch supports complex models like CNNs, RNNs, and GANs.
+- Community: PyTorch has an active community that contributes to tutorials, forums, and open-source projects.
+
+Basic PyTorch Example:
+
+import torch
+
+# Create a tensor
+x = torch.tensor([1, 2, 3, 4], dtype=torch.float32)
+
+# Perform a simple operation
+y = x * 2
+print("Tensor after multiplication by 2:", y)
+
+# Check if GPU is available and move tensor to GPU
+if torch.cuda.is_available():
+    x = x.to('cuda')
+    print("Tensor moved to GPU:", x)
+
+PyTorch vs. TensorFlow:
+- PyTorch is more flexible and is often preferred for research and experimentation.
+- TensorFlow is preferred for large-scale production environments due to its ecosystem.
+
+Applications of PyTorch:
+- Computer Vision: Image classification, object detection, etc.
+- Natural Language Processing: Text generation, language translation, etc.
+- Reinforcement Learning: Training AI models.
+- Generative Models: Creating new data like images from existing data (e.g., GANs).
+
+Installation:
+To install PyTorch, run:
+pip install torch torchvision
+"""
