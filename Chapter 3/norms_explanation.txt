@@ -1,0 +1,27 @@
+
+Norms are mathematical functions used to measure the size or length of vectors in a vector space. 
+They provide a way to quantify the "distance" of a vector from the origin in different ways.
+
+1. What is a Norm?
+   - A norm is a function that assigns a non-negative length or size to a vector in a vector space.
+   - Norms follow certain rules (or properties) to be mathematically valid:
+     1. Non-negativity: ‖x‖ ≥ 0 for any vector x, and ‖x‖ = 0 only if x is the zero vector.
+     2. Scalar multiplication: ‖αx‖ = |α|‖x‖ for any scalar α and vector x.
+     3. Triangle inequality: ‖x + y‖ ≤ ‖x‖ + ‖y‖, meaning the length of a sum of vectors is less than or equal to the sum of their lengths.
+
+2. Types of Norms
+   - Different types of norms are used depending on what we want to measure. Here are the most common ones:
+
+     - L1 Norm (Manhattan Norm): Measures the sum of absolute values of each element in the vector.
+       ‖x‖₁ = |x₁| + |x₂| + ... + |xₙ|
+
+     - L2 Norm (Euclidean Norm): Measures the "straight-line" or Euclidean distance of the vector from the origin.
+       ‖x‖₂ = √(x₁² + x₂² + ... + xₙ²)
+
+     - Infinity Norm (Max Norm): Measures the maximum absolute value among the elements in the vector.
+       ‖x‖∞ = max(|x₁|, |x₂|, ..., |xₙ|)
+
+3. Why are Norms Important?
+   - Distance Measurement: Norms are used to measure the distance between points or vectors, which is fundamental in geometry, machine learning, physics, and optimization.
+   - Vector Magnitude: Norms quantify how "large" or "intense" a vector is, useful in fields like physics for forces or in computer science for data scaling.
+   - Machine Learning & Optimization: Norms are often minimized or constrained in optimization problems, such as finding the best fit line in regression or regularizing models to avoid overfitting.
