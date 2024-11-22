@@ -1,0 +1,49 @@
+Definition of Regression:
+Regression is a statistical technique used to model the relationship between a dependent variable (target) and one or more independent variables (predictors).
+It is used to predict the value of the dependent variable based on the known values of the independent variables.
+Key Concepts:
+Dependent Variable (Target):
+
+The variable to be predicted or explained (e.g., house price).
+Independent Variables (Predictors):
+
+The variables that influence or explain the dependent variable (e.g., house size, location).
+Objective of Regression:
+
+To find a mathematical relationship (equation) between the dependent and independent variables.
+Types of Regression:
+Linear Regression:
+
+Model: 
+𝑦=𝑚𝑥+𝑐
+y=mx+c
+Purpose: Predicts a dependent variable using a straight-line equation.
+Example: Predicting house price based on size.
+Multiple Linear Regression:
+
+Model: 𝑦=𝑏0+𝑏1𝑥+1𝑏2𝑥2+…+𝑏𝑛𝑥𝑛y=b 0​ +b1​ x1​ +b 2​ x 2​ +…+b n​ x n​ 
+Purpose: Extends linear regression to include multiple independent variables.
+Example: Predicting house price based on size, location, and number of rooms.
+Polynomial Regression:
+
+Model: 𝑦=𝑏0+ 1𝑥+𝑏2𝑥2+…+𝑏𝑛𝑥𝑛y=b 0​ +b 1​ x+b 2​ x 2 +…+b n​ x n 
+Purpose: Models nonlinear relationships by using higher-order terms of the independent variable.
+Example: Modeling the relationship between time and sales growth.
+Logistic Regression:
+
+Model: Used for binary classification (e.g., yes/no outcomes).
+Output: Probability values (between 0 and 1).
+Example: Predicting if a customer will buy a product or not.
+Ridge and Lasso Regression:
+
+Purpose: Regularized versions of linear regression to prevent overfitting.
+Ridge: Adds L2 penalty (sum of squared coefficients).
+Lasso: Adds L1 penalty (sum of absolute coefficients).
+Nonlinear Regression:
+
+Purpose: Models relationships that are not linear by fitting more complex equations.
+Example: Predicting population growth with exponential models.
+Time Series Regression:
+
+Purpose: Predicts values over time by considering temporal dependencies.
+Example: Stock market prediction based on historical data.
